@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Calculator</h1>
+        <div id="calculator">
+          <input type="text" id="box">
+          <table>
+              <tr>
+                  <td><button id="c">C</button></td>
+                  <td><button>(</button></td>
+                  <td><button>)</button></td>
+                  <td><button>%</button></td>
+              </tr>
+              <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button>x</button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button>-</button></td>
+
+            </tr>
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button>+</button></td>
+
+            </tr>
+            <tr>
+                <td><button>0</button></td>
+                <td><button>.</button></td>
+                <td><button>=</button></td>
+                <td><button>/</button></td>
+            </tr>
+          </table>
+        </div>
+    </div>
+ <script src="calculator.js"></script> 
+ <script>
+    //    for(var i=1; i<=4; i++){
+    //    console.log("* ".repeat(i));
+    // }
+    
+	function firstRepeating(str)
+	{ 
+	    let h = new Set();
+	    for(let i = 0; i <= str.length - 1; i++)	   
+         {
+	        let c = str[i];
+	        if (h.has(c))
+	            return c;
+	    else 
+            h.add(c);
+        }  
+      return '\0';
+    }
+
+let str = "santosh";
+console.log(firstRepeating(str));
+
+ </script>  
+</body>
+</html>

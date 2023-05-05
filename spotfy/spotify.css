@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&family=Yuji+Boku&family=Yuji+Syuku&display=swap');
+body{
+    background-color:springgreen;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 8vh;
+  align-items: center;
+  font-family: 'Yuji Syuku', serif;
+}
+nav ul li{
+    margin: 0 10px;
+    color:limegreen;
+}
+nav ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color:limegreen;
+}
+.logo img{
+    height: 5vh;
+    padding: 5px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    color: white;
+}
+.container{
+ min-height: 75vh;
+ background-color: black;
+ color: white;
+ margin: 20px auto;
+ width: 70%;
+ padding: 20px;
+ box-sizing: border-box;
+ border-radius: 15px;
+ background-image: url("bg.jpg");
+ background-size: cover;
+}
+.bottom{
+    position: sticky;
+    background-color: black;
+    color: white;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+  margin-top:2vh;
+}
+.icons i{
+    cursor: pointer;
+    padding: 5px;
+}
+#progressbar{
+    width: 70vw;
+    cursor: pointer;
+}
+.songItem{
+    height: 30px;
+    display: flex;
+    background-color: red;
+    width: 20vw;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    margin: 10px;
+}
+.songItem img{
+ width: 30px;
+ margin:0.5px;
+ border-radius: 40px;
+}
+.timestamp{
+    margin: 0 20px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songItemconatiner{
+    margin-top: 50px
+}
+.songinfo{
+    position:absolute;
+    left: 15vw;
+}
+.songinfo img{
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+#mastersongname{
+    padding: 5px;
+    /* font-family: 'Roboto', sans-serif; */
+   /* font-family: 'Yuji Boku', serif;  */
+   font-weight: bold;
+   color: red;
+    font-family: 'Yuji Syuku', serif; 
+}

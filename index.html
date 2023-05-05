@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/cbfaa0923d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Header section -->
+    <div id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Port<span>folio</span></div>
+                <ul id="sidebar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()" id="close"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Santosh Kumar Sahu.</div>
+                <div class="text-3">And I'm a <span class="auto-type"></span></div>
+            </div>
+            <div class="imgs"></div>
+        </div>
+    </div>
+
+    <!-- About section -->
+
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="About-col-1">
+                    <img src="images/aboutimg.jpg" alt="">
+                </div>
+                <div class="About-col-2">
+                    <h1 class="subtitle" id="subtxt"> About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ratione iusto ullam reiciendis
+                        pariatur ut, numquam quae architecto expedita illo eaque quam aperiam vitae ab qui aliquam magni
+                        iste perspiciatis!
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skils</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designining Web interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-Current</span><br> Frontend Developer at EBS pvt. ltd. </li>
+                            <li><span>2020-2021</span><br>CSE at Girnar pvt. ltd. </li>
+                            <li><span>2019-2020</span><br>Internship at Zieta technology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>BCA From Berhampur university</li>
+                            <li><span>2016</span><br>+2 Science From Samrat college</li>
+                            <li><span>2014</span><br>Matriculation From GBHS Polasara</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btni">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- my skills section -->
+
+    <div id="skill">
+        <div class="max-width">
+            <h1 class="title"> My Skills</h1>
+            <div class="skill-content">
+                <div class="column left">
+                    <div class="text">My creative Skills and experiences.</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quasi architecto magni laboriosam
+                        rerum distinctio eligendi fugiat voluptate. Quam nisi incidunt reprehenderit maiores
+                        exercitationem sunt quia ratione sint, cumque saepe.</p>
+                        <a href="#">Read more</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML 5</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS 3</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Javascript</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Bootstrap</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line bootsrap"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Jquery</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="line jquery"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>React .Js</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line react"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloribus aspernatur et
+                        alias numquam accusantium.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Ui/Ux Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloribus aspernatur et
+                        alias numquam accusantium.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloribus aspernatur et
+                        alias numquam accusantium.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- my work section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Works</h1>
+            <div class="Work-list">
+                <div class="work">
+                    <img src="images/oneimg.jpg" alt="">
+                    <div class="layer">
+                        <h3>Travel App</h3>
+                        <p>It is an integrated solution designed specifically for small tour and travel
+                            companies to manage vehicle booking, ticket booking,hotel booking.</p>
+                        <a href="/clg projects/menu.html"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/twoimg.jpg" alt="">
+                    <div class="layer">
+                        <h3>My App</h3>
+                        <p>It is a digital music, podcast, and video service that gives you access to millions of songs
+                            and other content from creators all over the world.</p>
+                        <a href="/calculator.html"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/threeimg.webp" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connect you to the talanted people around the world. So download it from google play
+                            store.</p>
+                        <a href="/spotfy/project.html"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-envelope"></i>santoshksahu62@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7655001404</p>
+                    <div class="social-media">
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="images/My Resume.docx" class="btni" download="Cv">Download CV</a>
+
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btni btn2">Submit</button>
+                    </form>
+                    <span id="alert"></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @ Santosh. Made by Santosh.</p>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Frontend Developer", "Web Developer", "UI Designer", "Freelancer"],
+            typeSpeed: 100,
+            backSpeed: 70,
+            loop: true
+        })
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidebar = document.getElementById("sidebar");
+
+        function openMenu() {
+            sidebar.style.right = '-50px';
+        }
+        function closeMenu() {
+            sidebar.style.right = '-200px';
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzDdeYGekZecUbQQwedVR-JvcXQu8JbpZ_lvUhlhLq40ZHd40pQ4hOu5IJfVecujfpeuw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const alert = document.getElementById("alert")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    alert.innerHTML = "succesfully sent"
+                    setTimeout(function () {
+                        alert.innerHTML = "succesfully sent"
+                    }, 2000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>

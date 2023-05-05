@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="spotify.css">
+    <script src="https://kit.fontawesome.com/36284b494d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="logo.png"><span >Spotify</span></li>
+              <li id="Genre"><a  class="active" href="project.html" target="_self"> Home</a></li>
+
+                <li id="Genre"><a  class="active" href="spotify_genere.html" target="_self"> Genre</a></li>
+                <li id="Album"><a href="album.html">Album</a></li>
+                <li id="Artist"><a href="artist.html">Artist</a></li>
+            <!-- <li id="Genre"><a> Genre</a></li>
+            <li id="Album"><a>Album</a></li>
+            <li id="Artist"><a>Artist</a></li> -->
+        </ul>
+    </nav>
+    <div class="container">
+     <div class="playlist"></div>
+     <h1>Welcome to spotify music</h1>
+     <div class="songItemconatiner">
+     <div class="songItem">
+         <img src="covers/1.jpg" alt="cover image">
+         <span class="songname">Let me love you</span>
+        <span class="songlist"><span class="timestamp"> 5:40 <i id="0" class="far songItemplay fa-play-circle"></i></span></span> 
+     </div>
+     <div class="songItem">
+        <img src="covers/1.jpg" alt="cover image">
+        <span class="songname">Let me love you</span>
+       <span class="songlist"><span class="timestamp"> 5:40 <i id="1" class="far songItemplay fa-play-circle"></i></span></span> 
+    </div>
+    <div class="songItem">
+        <img src="covers/1.jpg" alt="cover image">
+        <span class="songname">Let me love you</span>
+       <span class="songlist"><span class="timestamp"> 5:40 <i id="2" class="far songItemplay fa-play-circle"></i></span></span> 
+    </div>
+    <div class="songItem">
+        <img src="covers/1.jpg" alt="cover image">
+        <span class="songname">Let me love you</span>
+       <span class="songlist"><span class="timestamp"> 5:40 <i id="3" class="far songItemplay fa-play-circle"></i></span></span> 
+    </div>
+    <div class="songItem">
+        <img src="covers/1.jpg" alt="cover image">
+        <span class="songname">Let me love you</span>
+       <span class="songlist"><span class="timestamp"> 5:40 <i id="4" class="far songItemplay fa-play-circle"></i></span></span> 
+    </div>
+    <div class="songItem">
+        <img src="covers/1.jpg" alt="cover image">
+        <span class="songname">Let me love you</span>
+       <span class="songlist"><span class="timestamp"> 5:40 <i id="5" class="far songItemplay fa-play-circle"></i></span></span> 
+    </div>
+    <div class="songItem">
+        <img src="covers/1.jpg" alt="cover image">
+        <span class="songname">Let me love you</span>
+       <span class="songlist"><span class="timestamp"> 5:40 <i id="6" class="far songItemplay fa-play-circle"></i></span></span> 
+    </div>
+    <div class="songItem">
+        <img src="covers/1.jpg" alt="cover image">
+        <span class="songname">Let me love you</span>
+       <span class="songlist"><span class="timestamp"> 5:40 <i id="7" class="far songItemplay fa-play-circle"></i></span></span> 
+    </div>
+    <div class="songItem">
+        <img src="covers/1.jpg" alt="cover image">
+        <span class="songname">Let me love you</span>
+       <span class="songlist"><span class="timestamp"> 5:40 <i id="8" class="far  songItemplay fa-play-circle"></i></span></span> 
+    </div>
+    <div class="songItem">
+        <img src="covers/1.jpg" alt="cover image">
+        <span class="songname">Let me love you</span>
+       <span class="songlist"><span class="timestamp"> 5:40 <i id="9" class="far songItemplay fa-play-circle"></i></span></span> 
+    </div>
+    </div>
+     <div class="banner"></div>
+    </div>
+    <div class="bottom">
+      <input type="range" id="progressbar" value="0">
+
+        <div class="icons">
+        <!-- fontawesome icons-->
+        <i class="fas fa-2x fa-backward" id="previous"></i>
+        <i class="far fa-2x fa-play-circle" id="masterplay"></i>    
+        <i class="fas fa-2x fa-forward" id="next"></i>
+        </div>
+       <div class="songinfo">
+           <img src="playing.gif" id="gif" width="45px" alt="playing"><span id="mastersongname">Aaj dil shayarana</span>
+       </div>
+    </div>
+    <script src="spotify.js"></script>
+</body>
+</html>
